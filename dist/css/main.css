@@ -1,0 +1,634 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2019 YOUR NAME
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-black-webfont.woff2") format("woff2"), url("../fonts/roboto-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 36, src/sass/components/_base.scss */
+body {
+  max-width: 1280px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 41, src/sass/components/_base.scss */
+body header {
+  width: 100%;
+  color: #FFF;
+}
+
+/* line 44, src/sass/components/_base.scss */
+body header .right-buttons {
+  position: absolute;
+  right: 0;
+  top: 7%;
+  text-align: center;
+}
+
+/* line 49, src/sass/components/_base.scss */
+body header .right-buttons #help {
+  background-color: #EB3501;
+}
+
+/* line 52, src/sass/components/_base.scss */
+body header .right-buttons #chain {
+  background-color: #484045;
+}
+
+/* line 55, src/sass/components/_base.scss */
+body header .right-buttons #search {
+  background-color: #7C7C7C;
+}
+
+/* line 58, src/sass/components/_base.scss */
+body header .right-buttons .square {
+  height: 18px;
+  width: 18px;
+  padding: 2px;
+  padding-bottom: 3px;
+}
+
+/* line 65, src/sass/components/_base.scss */
+body header div.feature-text {
+  width: 100%;
+  max-width: 1280px;
+  position: absolute;
+  top: 70px;
+  text-align: center;
+}
+
+/* line 71, src/sass/components/_base.scss */
+body header div.feature-text h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+/* line 76, src/sass/components/_base.scss */
+body header div.feature-text p {
+  margin: 0 5%;
+}
+
+/* line 80, src/sass/components/_base.scss */
+body header img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -100px 0;
+     object-position: -100px 0;
+}
+
+/* line 86, src/sass/components/_base.scss */
+body header nav {
+  background-color: #3DC7DC;
+  position: relative;
+  bottom: 5px;
+  padding-top: 5px;
+}
+
+/* line 91, src/sass/components/_base.scss */
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  max-height: 0px;
+  opacity: 0;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  list-style-type: none;
+  visibility: hidden;
+}
+
+/* line 102, src/sass/components/_base.scss */
+body header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+/* line 110, src/sass/components/_base.scss */
+body header nav ul li span {
+  width: 100%;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* line 116, src/sass/components/_base.scss */
+body header nav ul li.active {
+  background-color: #01A8BA;
+}
+
+/* line 119, src/sass/components/_base.scss */
+body header nav ul li::after {
+  content: "|";
+  padding-left: 2vw;
+  opacity: 0.5;
+}
+
+/* line 125, src/sass/components/_base.scss */
+body header nav ul li.active::after, body header nav ul li.last-menu-item::after {
+  content: "";
+}
+
+/* line 129, src/sass/components/_base.scss */
+body header nav ul.active {
+  opacity: 1;
+  max-height: 150px;
+  visibility: visible;
+}
+
+/* line 136, src/sass/components/_base.scss */
+body header .intro {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  margin-top: 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* line 142, src/sass/components/_base.scss */
+body header .intro .intro-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 146, src/sass/components/_base.scss */
+body header .intro .intro-title-wrapper h1 {
+  color: #01A8BA;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+/* line 153, src/sass/components/_base.scss */
+body header .intro .intro-title-wrapper span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 155, src/sass/components/_base.scss */
+body header .intro .intro-title-wrapper span p {
+  font-size: 1.3em;
+  line-height: 2em;
+  margin-top: 0;
+}
+
+/* line 163, src/sass/components/_base.scss */
+body header .intro .tabpanels details {
+  display: none;
+}
+
+/* line 165, src/sass/components/_base.scss */
+body header .intro .tabpanels details.open {
+  display: block;
+}
+
+/* line 168, src/sass/components/_base.scss */
+body header .intro .tabpanels details summary {
+  display: none;
+}
+
+/* line 171, src/sass/components/_base.scss */
+body header .intro .tabpanels details p {
+  margin-top: 0;
+}
+
+/* line 178, src/sass/components/_base.scss */
+body section.services {
+  margin: 0 5px;
+  margin-bottom: 20px;
+}
+
+/* line 181, src/sass/components/_base.scss */
+body section.services .services-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+/* line 185, src/sass/components/_base.scss */
+body section.services .services-title-wrapper h1 {
+  font-size: 1.6em;
+  color: #01A8BA;
+  padding-right: 10px;
+}
+
+/* line 190, src/sass/components/_base.scss */
+body section.services .services-title-wrapper p {
+  line-height: 2em;
+  font-size: 1.3em;
+}
+
+/* line 195, src/sass/components/_base.scss */
+body section.services .service-boxes-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* line 199, src/sass/components/_base.scss */
+body section.services .service-boxes-wrapper .service-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+}
+
+/* line 205, src/sass/components/_base.scss */
+body section.services .service-boxes-wrapper .service-box .icon-wrapper {
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 3px;
+}
+
+/* line 209, src/sass/components/_base.scss */
+body section.services .service-boxes-wrapper .service-box .icon-wrapper.active {
+  color: white;
+  background-color: #3DC7DC;
+}
+
+/* line 214, src/sass/components/_base.scss */
+body section.services .service-boxes-wrapper .service-box h2 {
+  font-weight: normal;
+  font-size: 0.67em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 223, src/sass/components/_base.scss */
+body section.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+/* line 228, src/sass/components/_base.scss */
+body section.links .link-box {
+  padding: 0 5px;
+}
+
+/* line 230, src/sass/components/_base.scss */
+body section.links .link-box h2 {
+  font-weight: normal;
+}
+
+/* line 233, src/sass/components/_base.scss */
+body section.links .link-box ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 237, src/sass/components/_base.scss */
+body section.links .link-box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+/* line 244, src/sass/components/_base.scss */
+body section.links .link-box ul li a {
+  width: 50%;
+  color: #01A8BA;
+  text-decoration: none;
+}
+
+/* line 253, src/sass/components/_base.scss */
+body section.resources {
+  margin: 0 5px;
+}
+
+/* line 255, src/sass/components/_base.scss */
+body section.resources .resources-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+/* line 259, src/sass/components/_base.scss */
+body section.resources .resources-title-wrapper h1 {
+  font-size: 1.6em;
+  color: #01A8BA;
+  padding-right: 10px;
+}
+
+/* line 264, src/sass/components/_base.scss */
+body section.resources .resources-title-wrapper p {
+  line-height: 2em;
+  font-size: 1.3em;
+  margin-top: 0;
+}
+
+/* line 270, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 274, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper .resource-box {
+  width: 100%;
+  max-width: 535px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+
+/* line 280, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper .resource-box .icon-box {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  padding-right: 7%;
+  margin-right: 3%;
+  height: 100px;
+}
+
+/* line 286, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper .resource-box .resource-box-links {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/* line 289, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper .resource-box .resource-box-links h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+/* line 293, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper .resource-box .resource-box-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 297, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper .resource-box .resource-box-links ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 301, src/sass/components/_base.scss */
+body section.resources .resource-box-wrapper .resource-box .resource-box-links ul li a {
+  color: #01A8BA;
+  text-decoration: none;
+}
+
+/* line 313, src/sass/components/_base.scss */
+body footer .footer-text {
+  width: 100%;
+  position: relative;
+  top: 200px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 321, src/sass/components/_base.scss */
+body footer .footer-text h1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* line 326, src/sass/components/_base.scss */
+body footer .footer-text p {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/* line 331, src/sass/components/_base.scss */
+body footer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 200px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 342, src/sass/components/_base.scss */
+  body header img {
+    height: auto;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  /* line 353, src/sass/components/_base.scss */
+  section.resources div.resource-box-wrapper .resource-box .resource-box-links ul li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /* line 355, src/sass/components/_base.scss */
+  section.resources div.resource-box-wrapper .resource-box .resource-box-links ul li a {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  /* line 369, src/sass/components/_base.scss */
+  body header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 372, src/sass/components/_base.scss */
+  body header nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  /* line 375, src/sass/components/_base.scss */
+  body header nav ul li span#tablist2::after {
+    content: "|";
+    margin-left: 4vw;
+    opacity: 0.5;
+  }
+  /* line 381, src/sass/components/_base.scss */
+  body header nav ul li.active span#tablist2::after {
+    content: "";
+  }
+}
+
+@media only screen and (min-width: 730px) {
+  /* line 399, src/sass/components/_base.scss */
+  body header nav ul li.active::after {
+    position: relative;
+    top: 20px;
+    content: "";
+    overflow: visible;
+    opacity: 1;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #01A8BA;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  /* line 424, src/sass/components/_base.scss */
+  body header .right-buttons div.square {
+    height: 24px;
+    width: 24px;
+  }
+  /* line 429, src/sass/components/_base.scss */
+  body header div.feature-text {
+    width: 100%;
+    top: 160px;
+  }
+  /* line 432, src/sass/components/_base.scss */
+  body header div.feature-text h1 {
+    font-size: 2.2em;
+  }
+  /* line 435, src/sass/components/_base.scss */
+  body header div.feature-text p {
+    font-size: 1.5em;
+  }
+  /* line 440, src/sass/components/_base.scss */
+  body section.links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /* line 442, src/sass/components/_base.scss */
+  body section.links .link-box {
+    width: 48%;
+  }
+  /* line 444, src/sass/components/_base.scss */
+  body section.links .link-box:first-of-type {
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  /* line 451, src/sass/components/_base.scss */
+  body section.resources div.resource-box-wrapper .resource-box {
+    max-width: 48%;
+  }
+  /* line 458, src/sass/components/_base.scss */
+  body footer div.footer-text h1 {
+    font-size: 2.2em;
+  }
+  /* line 461, src/sass/components/_base.scss */
+  body footer div.footer-text p {
+    font-size: 1.5em;
+  }
+}
