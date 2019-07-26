@@ -10,7 +10,7 @@ To view project, you can simply open '/dist/index.html' in your web browser.
 
 ## install gulp-cli
 
-`npm install -g gulp-cli'
+`npm install -g gulp-cli`
 
 ## run dev server
 `gulp watch`
